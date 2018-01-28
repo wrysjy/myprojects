@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST</title>
+    <style>
+        body{
+            background:skyblue;
+        }
+        h1{
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>home ..</h1>
+    <h1>User : <%=keydata.user%></h1>
+    <h1>Job : <%=keydata.job%></h1>
+    <% include nav.ejs %>
+
+    <form action="/actionfrompost" method="post">
+        FIRST NAME : <input type="text" name="fname"><br>
+        LAST NAME : <input type="text" name="lname"><br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
